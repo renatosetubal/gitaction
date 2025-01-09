@@ -5,4 +5,4 @@ def write_teal(text):
     print(f"{teal}{text}{reset}")
 
 # Testando a função
-write_teal("Este texto é para a branch red! - GitFlow")
+write_teal("Este texto é para a branch Blue! - GitFlow")
