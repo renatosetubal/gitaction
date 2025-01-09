@@ -14,3 +14,9 @@ jobs:
         run: | 
           echo "Esta mensagem faz parte da segunda ação!"
           echo "Parabéns por ter criado o seu primeiro Workflow!"
+      - name: "Uma mensagem agora usando o Python"
+        run: |
+          variavel = "Este é o resultado de um script em Python rodando da action"
+          printf(variavel)
+        shell: python  
+          
