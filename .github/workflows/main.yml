@@ -6,7 +6,7 @@ on:
 jobs:
   first-job:
     name: "Meu primeiro job :-)"
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
     steps:
       - name: "First Action"
         run: echo "Olá, funcionou minha primeira action!!!"
