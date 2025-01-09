@@ -1,0 +1,16 @@
+name: first-pipe
+on: 
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+jobs:
+  first-job:
+    name: "Meu primeiro job :-)"
+    runs-on: debian-latest
+    steps:
+      - name: "First Action"
+        run: echo "Olá, funcionou minha primeira action!!!"
+      - name: "Second Action with multiple runs"
+        run: | 
+          echo "Esta mensagem faz parte da segunda ação!"
+          echo "Parabéns por ter criado o seu primeiro Workflow!"
