@@ -17,6 +17,6 @@ jobs:
       - name: "Uma mensagem agora usando o Python"
         run: |
           variavel = "Este é o resultado de um script em Python rodando da action"
-          printf(variavel)
+          print(variavel)
         shell: python  
           
