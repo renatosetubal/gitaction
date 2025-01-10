@@ -20,8 +20,14 @@ jobs:
         print(variavel)
       shell: python
   second-job:
-    name: "Instalação do ambiente nodeJs"
-    runs-on: ubuntu-latest
-    steps:
-    - name: "Verificando versão do nodeJs atual"
-      run: node --version
+      name: "Instalação do ambiente nodeJs"
+      runs-on: ubuntu-latest
+      steps:
+        - name: "Verificando versão do nodeJs atual"
+          run: node --version
+        - name: "Definir versão menor 20.13.1 do nodeJs"
+        - uses: actions/setup-node@v4
+          with:
+            node-version: "20.13.1"
+        - name: "Verificando versão do nodeJs atual"
+          run: node --version
