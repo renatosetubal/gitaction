@@ -9,7 +9,7 @@ on:
 jobs:
   first-job:
     name: "Meu primeiro job :-)"
-    runs-on: self-runner
+    runs-on: self-hosted
     steps:
     - name: "First Action"
       run: echo "Olá, funcionou minha primeira action!!!"
@@ -28,7 +28,7 @@ jobs:
 
   second-job:
     name: "Instalação do ambiente nodeJs"
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: [ first-job ]
     steps:
     - name: "Verificando versão do nodeJs atual"
