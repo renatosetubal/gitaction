@@ -9,7 +9,7 @@ on:
 jobs:
   first-job:
     name: "Meu primeiro job :-)"
-    runs-on: ubuntu-latest
+    runs-on: self-runner
     steps:
     - name: "First Action"
       run: echo "Olá, funcionou minha primeira action!!!"
